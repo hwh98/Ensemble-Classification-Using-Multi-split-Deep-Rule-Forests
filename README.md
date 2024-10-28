@@ -47,7 +47,7 @@ Experinmental results:
 You can install the all required R packages by running `package_installaion.R` 
 
 ## Usage
-How to train the multi-split DRF model?
+How to train the multi-split DRF model on poker dataset?
 
 If you have Rstudio, you can train the model by simply run the `train.R`
 
@@ -59,6 +59,7 @@ The model is up and running, if you see result like:
 \#\#\#Level 1\#\#\#
 
 \# of tree :  20 , mincase: 80 , column ratio 0.3 
+
 1 tree with 45 rules | single train acc  0.5040841 | test acc  0.481674 
 
 2 tree with 28 rules | single train acc  0.5414977 | test acc  0.54165 
