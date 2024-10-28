@@ -9,6 +9,12 @@ To achieve interpretability, we leverage the Deep Rule Forest (DRF) algorithm, a
 
 To address these limitations, I developed the multi-split Deep Rule Forest (DRF), which utilizes the C5.0 tree structure to learn more effective representations through a layer-wise approach.
 
+## Contribution
+- Implemented and optimized the Deep Rule Forest (DRF) algorithm using the C5.0 decision tree.
+   
+- Modified the source code of as.party.C5.0() in the C50 package to handle special characters in columns properly (the changes were made in `validate_aspartyC50.R`).
+
+   
 ## Experimental Results
 
 We experimented with the multi-split Deep Rule Forest (DRF) on the Poker (Dua & Graff, 2019), Churn (Kohavi et al., 1994), and MNIST (Li Deng, 2012) datasets, all of which have categorical features as target variables.
@@ -41,12 +47,14 @@ Experinmental results:
 You can install the all required R packages by running `package_installaion.R` 
 
 ## Usage
-How to Use: Explain how to run your project. This can include command-line usage, function calls, or examples.
-Code Examples: Provide example code snippets to demonstrate usage.
+How to train the multi-split DRF model?
+If you have Rstudio, you can train the model by simply run the `train.R`
+If you are on max, you can train the model by 
+`Rscript train.R`
 
 
 ## Acknowledgments
-Credits: Acknowledge any resources, libraries, or individuals that helped in the development of your project.
+Credits: This works is based on [C5.0 ](https://github.com/topepo/C5.0/tree/master) 
 
 ## Contact Information
 **My name**: Jasmine Hung \
