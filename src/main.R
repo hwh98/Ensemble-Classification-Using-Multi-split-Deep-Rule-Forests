@@ -12,14 +12,16 @@ library(partykit)
 library(doMC)
 library(ggplot2)
 library(onehot)
+library(rstudioapi)
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
-setwd('~/DRF_Multi_split')
 source("./validate_aspartyC50.R")
 source("./ruleforest.R")
 source('./deep_rf.R')
 source('./plot_accline.R')
 source('./rowsample.R')
 source('./columnsample.R')
+source('./pathpred.R')
 source('./extractRules_rbc50.R')
 source('./vote_acc.R')
 source('./acc_df.R')
@@ -28,7 +30,7 @@ source('./rule_encoding.R')
 
 
 # prepare poker data 
-poker_train = fread("./data/poker_train.csv",  stringsAsFactors = F,
+poker_train = fread("../data/poker_train.csv",  stringsAsFactors = F,
                     verbose = T, data.table = F) 
 
 colnames(poker_train) = c("S1", "C1", "S2", "C2", "S3", "C3", "S4", "C4", "S5", "C5", "hand")
