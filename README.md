@@ -48,10 +48,23 @@ You can install the all required R packages by running `package_installaion.R`
 
 ## Usage
 How to train the multi-split DRF model?
+
 If you have Rstudio, you can train the model by simply run the `train.R`
-If you are on max, you can train the model by 
+
+Or you can train the model by running this on Terminal: 
 `Rscript train.R`
 
+The model is up and running, if you see result like:
+
+\#\#\#Level 1\#\#\#
+
+\# of tree :  20 , mincase: 80 , column ratio 0.3 
+1 tree with 45 rules | single train acc  0.5040841 | test acc  0.481674 
+
+2 tree with 28 rules | single train acc  0.5414977 | test acc  0.54165 
+
+3 tree with 35 rules | single train acc  0.5041412 | test acc  0.4904705 
+...
 
 ## Acknowledgments
 Credits: This works is based on [C5.0 ](https://github.com/topepo/C5.0/tree/master) 
